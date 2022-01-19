@@ -14,6 +14,8 @@ Clone this repo and run following commands
 multipass launch -n ebpf-vm --cloud-init cloud-config.yaml
 ```
 
+**Note:** Initial setup will take a few minutes
+
 To get shell to vm
 
 ```bash

@@ -4,6 +4,9 @@ set -euo pipefail
 echo "apt-update"
 sudo apt-get update
 
+echo "install build-essential"
+sudo apt install -y build-essential
+
 echo "# install go"
 VERSION='1.17'
 OS='linux'
@@ -19,7 +22,8 @@ echo "install ebpf tools and dependencies"
 sudo apt install -y make
 sudo apt install -y clang
 sudo apt install -y llvm
-sudo apt install -y libbpf-dev
+sudo apt install -y pkg-config
 sudo apt install -y libelf-dev
+sudo apt install -y libbpf-dev
 
 echo "# package installations complete!"
