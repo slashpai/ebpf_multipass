@@ -4,7 +4,7 @@ VM setup using multipass for working with ebpf in go
 
 ## Pre-requisite
 
-[multpass](https://multipass.run) should be installed
+[multipass](https://multipass.run) should be installed
 
 ## Usage
 
@@ -18,6 +18,17 @@ To get shell to vm
 
 ```bash
 multipass shell ebpf-vm
+```
+
+To stop vm
+
+```bash
+multipass stop ebpf-vm
+```
+To start vm
+
+```bash
+multipass start ebpf-vm
 ```
 
 To delete vm and cleanup
