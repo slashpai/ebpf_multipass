@@ -21,4 +21,3 @@ runcmd:
 - cd $HOME
 - curl -L -o cloud-init.sh 'https://raw.githubusercontent.com/slashpai/ebpf_multipass/main/cloud-init.sh'
 - bash cloud-init.sh | tee output.txt
-

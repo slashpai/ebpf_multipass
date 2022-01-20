@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "apt-update"
-sudo apt-get update
-
 echo "install build-essential"
 sudo apt install -y build-essential
 
@@ -19,7 +16,6 @@ rm go$VERSION.$OS-$ARCH.tar.gz
 echo 'PATH="$PATH:/usr/local/go/bin:'$HOME'/go/bin"' >> ~/.bash_aliases
 
 echo "install ebpf tools and dependencies"
-sudo apt install -y make
 sudo apt install -y clang
 sudo apt install -y llvm
 sudo apt install -y pkg-config
