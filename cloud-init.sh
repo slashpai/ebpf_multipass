@@ -5,7 +5,7 @@ echo "install build-essential"
 sudo apt install -y build-essential
 
 echo "# install go"
-VERSION='1.17'
+VERSION='1.18'
 OS='linux'
 ARCH='amd64'
 
